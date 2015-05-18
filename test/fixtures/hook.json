@@ -1,0 +1,50 @@
+{
+  from_url: 'http://d.monstrs.ru',
+  owner: {
+    remote: 'github.com',
+    login: 'monstrs',
+    name: 'Andrey Linko',
+    email: 'AndreyLinko@gmail.com',
+    gravatar: 'c3710393c3b7fb00362cc6262f681c10',
+    admin: true,
+    active: true,
+    syncing: false,
+    created_at: 1427719724,
+    updated_at: 1431623142,
+    synced_at: 1431623142
+  },
+  repository: {
+    remote: 'github.com',
+    host: 'github.com',
+    owner: 'monstrs',
+    name: 'test-app',
+    url: 'https://github.com/monstrs/test-app',
+    clone_url: 'git://github.com/monstrs/test-app.git',
+    git_url: 'git://github.com/monstrs/test-app.git',
+    ssh_url: 'git@github.com:monstrs/test-app.git',
+    active: true,
+    private: false,
+    privileged: true,
+    post_commits: true,
+    pull_requests: true,
+    timeout: 3600,
+    created_at: 1430226098,
+    updated_at: 1430226142
+  },
+  commit: {
+    id: 32,
+    status: 'Success',
+    started_at: 1432028920,
+    finished_at: 1432029257,
+    duration: 337,
+    sha: '5e69d7a394b5754b63c90603c72360a7e448337f',
+    branch: 'master',
+    pull_request: '',
+    author: 'AndreyLinko@gmail.com',
+    gravatar: 'c3710393c3b7fb00362cc6262f681c10',
+    timestamp: '2015-05-19T09:08:49Z',
+    message: 'Add test webhook',
+    created_at: 1432026536,
+    updated_at: 1432029257
+  }
+}

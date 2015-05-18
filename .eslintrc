@@ -1,0 +1,12 @@
+{
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "quotes": [1],
+    "strict": 0,
+    "no-underscore-dangle": 0,
+    "no-shadow": 0
+  }
+}

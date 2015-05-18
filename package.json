@@ -1,0 +1,39 @@
+{
+  "name": "ckube-server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node bin/server.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "bin": {
+    "ckubectl": "./bin/ckubectl.js"
+  },
+  "dependencies": {
+    "electrolyte": "^0.0.6",
+    "bootable": "^0.2",
+    "express": "^4.11",
+    "nconf": "^0.7",
+    "mongoose": "^4.0",
+    "url-pattern": "^0.8",
+    "body-parser": "^1.12",
+    "swig": "^1.4",
+    "async": "^0.9",
+    "kue": "^0.9",
+    "qs": "^2.4",
+    "node-kubernetes-client": "git+https://github.com/monstrs/node-kubernetes-client.git",
+    "ckube-api": "git+https://github.com/monstrs/ckube-api.git",
+    "thrift": "git+https://github.com/monstrs/nodejs-thrift.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.8",
+    "gulp-util": "^3.0",
+    "lodash": "^3.0",
+    "gulp-nodemon": "^2.0",
+    "mocha": "^2.1",
+    "chai": "^1.10",
+    "faker": "^2.1",
+    "request": "^2.55",
+    "yargs": "^3.9"
+  },
+  "private": true
+}

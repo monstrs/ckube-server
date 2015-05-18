@@ -1,0 +1,15 @@
+{
+  "id": "{{ commit.branch }}-test-app",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "port": 31008,
+  "containerPort": "http-server",
+  "protocol": "TCP",
+  "selector": {
+    "name": "test-app-{{ commit.branch }}"
+  },
+  "labels": {
+    "name": "test-app-{{ commit.branch }}"
+  },
+  "publicIPs":[]
+}

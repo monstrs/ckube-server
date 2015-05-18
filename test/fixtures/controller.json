@@ -1,0 +1,36 @@
+{
+  "id": "test-app-{{ commit.branch }}-controller",
+  "kind": "ReplicationController",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "replicas": 1,
+    "replicaSelector": {
+      "name": "test-app-{{ commit.branch }}"
+    },
+    "podTemplate": {
+      "desiredState": {
+         "manifest": {
+           "version": "v1beta1",
+           "id": "test-app-{{ commit.branch }}",
+           "containers": [{
+             "name": "test-app-{{ commit.branch }}",
+             "image": "library/nginx",
+             "imagePullPolicy": "PullAlways",
+              "ports": [{
+                "name": "http-server",
+                "containerPort": 80
+              }],
+              "env": [{
+                "name": "SECRET_KEY_BASE",
+                "value": "secretkey"
+              }]
+           }]
+         }
+      },
+      "labels": {
+        "name": "test-app-{{ commit.branch }}"
+      }
+    }
+  },
+  "labels": {"name": "test-app-{{ commit.branch }}"}
+}
